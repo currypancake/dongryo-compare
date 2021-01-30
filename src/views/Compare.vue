@@ -91,6 +91,7 @@ export default {
       this.intermediary = [
         ...new Set(this.list1.filter((x) => compareList.has(x))),
       ];
+      if (this.intermediary.length == 0) this.intermediary = "X";
     },
   },
 };
